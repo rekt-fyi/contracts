@@ -1,0 +1,46 @@
+{
+    "issues": [
+        {
+            "issues": [
+                {
+                    "swcID": "SWC-107",
+                    "swcTitle": "Reentrancy",
+                    "description": {
+                        "head": "The contract executes an external message call.",
+                        "tail": "An external function call to a fixed contract address is executed. Make sure that the callee contract has been reviewed carefully."
+                    },
+                    "severity": "Low",
+                    "locations": [
+                        {
+                            "sourceMap": "11684:52:0"
+                        }
+                    ],
+                    "extra": {
+                        "testCases": null
+                    }
+                }
+            ],
+            "sourceType": "solidity-file",
+            "sourceFormat": "text",
+            "sourceList": [
+                "RektFyi.sol"
+            ],
+            "meta": {
+                "coveredInstructions": 4364,
+                "coveredPaths": 142,
+                "logs": [
+                    {
+                        "level": "error",
+                        "msg": "Maru:Error: Unable to detect main source to compile"
+                    },
+                    {
+                        "level": "error",
+                        "msg": "Maru:Error: Errors returned by the Solidity compiler. Check your code for syntax errors and that you have submitted all imports."
+                    }
+                ],
+                "selectedCompiler": "Unknown"
+            }
+        }
+    ],
+    "uuid": "0f25f34d-58a6-4414-83c1-9700afe8f997"
+}
